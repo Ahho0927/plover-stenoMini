@@ -1,0 +1,15 @@
+.venv/
+.vscode/
+build/
+dist/
+frequency_analyzer/
+output/
+plover_stenoMini.egg-info/
+python/
+refers/
+tests/
+stenoMini_hangul_qwerty.json
+stenoMini_brief_qwerty.json
+stenoMini_commands.json
+convert_brief.py
+generate_hangul.py

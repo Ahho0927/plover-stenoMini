@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=79"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plover-stenoMini"
+version = "0.2.0"
+description = "stenoMini Korean steno system and batchim conditional meta for Plover"
+requires-python = ">=3.9"
+dependencies = ["plover>=5.0"]
+
+[project.entry-points."plover.system"]
+"stenoMini" = "plover_stenoMini.system"
+
+[project.entry-points."plover.meta"]
+ko_batchim_condition = "plover_stenoMini.meta:ko_batchim_condition"
+
+[tool.setuptools]
+packages = ["plover_stenoMini"]
+
+[tool.setuptools.package-data]
+plover_stenoMini = ["dictionaries/*.json"]
